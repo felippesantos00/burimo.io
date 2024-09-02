@@ -183,28 +183,29 @@ const data = {
 // Função para verificar palavras ofensivas e fornecer sugestões
 function match() {
   const words = data.words;
-  let input = document.getElementById("text").value.toUpperCase();
+  let input = document.getElementById("input-text").value.toUpperCase();
   let outputText = "";
 
   words.forEach((item) => {
     const wordUpper = item.word.toUpperCase();
     if (input.includes(wordUpper)) {
-      const suggestions = item.suggestions.join(", ");
-      outputText += `<p>Use "<b id="sugestion">${suggestions}</b>" no lugar</p>`;
+      item.suggestions.forEach((suggestion) => {
+        outputText += `<p>${suggestion.trim()}</p>`;
+      });
     }
   });
 
-  document.getElementById("sugestion").innerHTML =
-    outputText || "Nenhuma palavra ofensiva encontrada.";
+  document.getElementById("listSugestion").innerHTML = outputText;
 }
+
 
 // Função para mostrar o texto digitado
 function getText() {
-  let text = document.getElementById("text").value;
+  let text = document.getElementById("input-text").value;
   if (text) {
-    document.getElementById(
-      "word_wrong"
-    ).innerHTML = `<p>Não use: "<b id="input">${text}</b>", <b id="definition"></b>`;
+    // document.getElementById(
+    //   "listSugestion"
+    // ).innerHTML = `<p>Não use: "<b id="input">${text}</b>", <b id="definition"></b>`;
     match();
   } else {
     document.getElementById("word_wrong").innerHTML = "";

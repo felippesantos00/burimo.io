@@ -11,3 +11,138 @@
   font-size: var(--font-size);
   text-align: justify;
 }
+/* Estilos globais */
+body {
+  margin: 0;
+  background-color: var(--cor-primaria);
+    overflow: hidden;
+}
+
+.containerText,
+.containerSugestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  height: 280px;
+  position: relative;
+  border: solid white 1px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.containerTopInfo,
+.containerTitle,
+.containerSugestionTitle,
+.containerOptions {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.containerTopInfo {
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: solid rgba(255, 255, 255, 0.5) 1px;
+  height: 20%;
+}
+
+.containerTitle {
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.containerOptions {
+  justify-content: space-around;
+  width: 50%;
+}
+
+.containerSugestionTextArea {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 0 0 10px 20px;
+  padding: 2px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ListSugestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;
+  padding: 0 10px;
+}
+
+.ListSugestion p {
+  color: black;
+  border-bottom: solid rgba(0, 0, 0, 0.3) 0.5px;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.ListSugestion p:hover {
+  font-size: 20px;
+  transition: 250ms 50ms;
+  text-decoration: double;
+}
+
+.containerOptions button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-secundaria);
+  border: none;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+}
+
+.containerOptions button:hover {
+  border: solid 2px;
+}
+
+i {
+  color: black;
+}
+
+.containerInputText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.containerInputText textarea {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 20px 20px;
+  border: none;
+  color: black;
+  box-sizing: border-box;
+  outline: none;
+  appearance: none;
+  padding: 10px;
+  font-size: var(--font-size);
+  resize: none;
+}
+
+/* Barra de rolagem invisível */
+.invisible-scrollbar {
+  overflow-y: auto;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.invisible-scrollbar {
+  scrollbar-width: none;
+}
