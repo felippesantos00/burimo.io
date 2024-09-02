@@ -190,14 +190,13 @@ function match() {
     const wordUpper = item.word.toUpperCase();
     if (input.includes(wordUpper)) {
       item.suggestions.forEach((suggestion) => {
-        outputText += `<p>${suggestion.trim()}</p>`;
+        outputText += `<p><i class="fa-regular fa-circle-xmark" style="color:red;"></i>${wordUpper}<br><i class="fa-regular fa-circle-check" style="color:green;"></i>${suggestion.trim()}</p>`;
       });
     }
   });
 
   document.getElementById("listSugestion").innerHTML = outputText;
 }
-
 
 // Função para mostrar o texto digitado
 function getText() {
