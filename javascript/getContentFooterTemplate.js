@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  const headerContentDiv = $(".footerContent");
+  const footerContentDiv = $(".footerContent");
   fetch("templates/footer.html")
     .then((response) => response.text())
     .then((html) => {
-      headerContentDiv.html(html);
+      footerContentDiv.html(html);
     });
 });

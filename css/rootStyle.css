@@ -1,0 +1,13 @@
+:root,
+* {
+  --cor-primaria: #971aa1;
+  --cor-secundaria: #f6cf00;
+  --text-color: black;
+  --highlight-text-color: white;
+  --font-size: 3vw;
+  --font-family: serif;
+  color: var(--highlight-text-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  text-align: justify;
+}

@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    text-align: center;
+    background-color: #971aa1;
+    height: 400px;
+    width: 100%;
+}
+p{
+    color:white;
+}
+nav{
+    position: sticky;
+    display:flex;
+    justify-content: center;
+}
+#text, #output #output2 #output3 {
+    height: 30px;
+    font-size: 16pt;
+    padding: 5px;
+color: white    ;
+}
+/*##########################################*/
+ul{
+    display: flex;
+    margin:10px;
+    list-style: none;
+}
+li{
+    margin:10px;
+    color: rgb(211, 3, 248);
+    margin-left:20px;
+    margin-right: 20px;
+}
+.nav1{
+    background-color: #F6CF00;
+    width: 100%;
+}
