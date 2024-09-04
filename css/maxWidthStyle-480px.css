@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
-    width: 480px;
+    max-width: 480px;
   }
 
   .sectionHomeContent,
@@ -19,13 +19,13 @@
   }
 
   .headerContent {
-    height: 80px;
+    height: 20vw;
     background-color: var(--cor-secundaria);
     border-radius: 0 0 50px 50px;
   }
 
   .headerContent header button {
-    background-color: var(--cor-secundaria);
+    background-color: transparent;
     border: none;
     border-radius: 10% 10% 0 0;
     color: var(--text-color);
@@ -33,11 +33,10 @@
 
   .headerContent header button:hover {
     border-bottom: solid 1px;
-    font-size: 25px;
+    font-size: 1.5em;
   }
 
   .descriptionAboutProject {
     width: 70%;
-    position: relative;
   }
 }
